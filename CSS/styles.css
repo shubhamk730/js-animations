@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.root {
+  background-color: aqua;
+  height: 800px;
+  width: 800px;
+  transition: background 1s ease-in 3s, width linear 3s, height linear 3s;
+}
+
+.block {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  /* transition: all 0.5s linear 0.5s; */
+  transition: background 0.5s linear 0.5s, margin-left 1s linear,
+    margin-top 1s ease-in;
+}
+
+.root:hover {
+  background-color: blue;
+  width: 400px;
+  height: 400px;
+}
+
+.root:hover .block {
+  background: purple;
+  margin-top: 100px;
+  margin-left: 100px;
+}
